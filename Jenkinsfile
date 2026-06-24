@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                echo 'Checking out code...'
-                checkout scm
+                echo 'Code already checked out by Jenkins automatically'
+                sh 'ls -la'
             }
         }
         stage('Build') {
